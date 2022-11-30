@@ -1,0 +1,64 @@
+<html>
+    <head><title>Pemograman</title></head>
+    <body bgcolor="green">
+        <script src="apps.js"></script>
+        <script languange="JavaScript">
+
+            function tekan()
+            {
+                var nimstr = (document.fform.nim.value);
+                var namastr = (document.fform.nama.value);
+                var jenisstr = (document.fform.jenis.value);
+                var agamastr = (document.fform.agama.value);
+                var statusstr = (document.fform.status.value);
+                var jurusanstr = (document.fform.jurusan.value);
+                var komentarstr = (document.fform.komentar.value);
+                document.fform.onim.value = nimstr;
+                document.fform.onama.value = namastr;
+                document.fform.ojenis.value = jenisstr;
+                document.fform.oagama.value = agamastr;
+                document.fform.ostatus.value = statusstr;
+                document.fform.ojurusan.value = jurusanstr;
+                document.fform.okomentar.value = komentarstr;
+            }
+        </script>
+        
+        <form name="fform">
+            <pre>
+                Nim            : <input type="text" size="25" name="nim">
+
+                Nama Mahasiswa : <input type="text" size="25" name="nama">
+
+                Jenis Kelamin  : <input type="text" size="25" name="jenis">
+                                    
+                Agama          : <input type="text" size="25" name="agama">
+
+                Status         : <input type="text" size="25" name="status">
+
+                Jurusan        : <input type="text" size="25" name="jurusan">
+
+                komentar       : <textarea name="komentar" cols="25" rows="3"></textarea>
+            </PRE>
+            <pre>
+            <br>
+            <input type="button" value="Kirim" onclick="tekan()"> <input type="reset" value="Ulang">
+            </pre>
+            <br>
+            <h2>Data Mahasiswa Politeknik Amamapare Timika</h2><hr width="650" color="black">
+            <pre>
+                Nim           : <input type="text" size="25" name="onim">
+
+                Nama Mahasiswa: <input type="text" size="25" name="onama">
+
+                Jenis Kelamin : <input type="text" size="25" name="ojenis">
+
+                Agama         : <input type="text" size="25" name="oagama">
+
+                Status        : <input type="text" size="25" name="ostatus">
+
+                Jurusan       : <input type="text" size="25" name="ojurusan">
+
+                komentar      : <textarea name="okomentar" cols="25" rows="3"></textarea>
+        </pre>    
+    </body>
+</html>
